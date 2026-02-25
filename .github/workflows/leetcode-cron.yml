@@ -30,3 +30,11 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
           POLL_INTERVAL: 600
+      - name: Commit last_seen.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add last_seen.json
+          git diff --cached --quiet || git commit -m "chore: update last_seen.json"
+          git push
