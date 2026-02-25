@@ -11,8 +11,6 @@ const USERNAMES = [
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const CHAT_ID = process.env.CHAT_ID;
-const POLL_INTERVAL = (process.env.POLL_INTERVAL || 60) * 1000;
-
 const STORE_PATH = path.join(__dirname, "last_seen.json");
 
 /* ---------------- LOAD / SAVE STATE ---------------- */
@@ -105,17 +103,12 @@ async function checkUser(username) {
 async function start() {
     console.log("🚀 LeetCode Multi-User Tracker Started");
     console.log(`👥 Users: ${USERNAMES.join(", ")}`);
-    console.log(`⏱ Poll interval: ${POLL_INTERVAL / 1000}s\n`);
 
-    // Initial baseline
     for (const user of USERNAMES) {
         await checkUser(user);
     }
 
-    // Poll continuously
-    setInterval(() => {
-        USERNAMES.forEach(checkUser);
-    }, POLL_INTERVAL);
+    console.log("✅ Run completed");
 }
 
 start();
