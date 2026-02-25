@@ -165,4 +165,7 @@ MIT License
 
 Built with ❤️ for friends who motivate each other to stay consistent on LeetCode.
 
+## Output
 
+
+![leet-friend](https://github.com/user-attachments/assets/51636b63-004d-4cbd-b990-052ce067c6cc)
