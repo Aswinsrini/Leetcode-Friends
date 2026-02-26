@@ -166,6 +166,9 @@ MIT License
 Built with ❤️ for friends who motivate each other to stay consistent on LeetCode.
 
 ## Output
+* Submission Notification
+<img width="1019" height="908" alt="Screenshot 2026-02-26 at 8 25 32 PM" src="https://github.com/user-attachments/assets/81b501f1-7ca4-4aeb-b40a-9b3ed154010a" />
 
+* Daily Summary Notification
+<img width="1004" height="918" alt="Screenshot 2026-02-26 at 8 24 08 PM" src="https://github.com/user-attachments/assets/e954f71f-482b-4f41-9691-8d94c18e6eba" />
 
-![leet-friend](https://github.com/user-attachments/assets/51636b63-004d-4cbd-b990-052ce067c6cc)
